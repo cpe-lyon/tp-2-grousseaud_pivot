@@ -1,0 +1,22 @@
+#Exercice 1 : Variables d'environnement
+
+1. PATH est une variable d'environnement qui définit la liste des répertoire dans lequel chercher un programme à exécuter.
+Le contenu de cette variable d'environnement est une liste de répertoires séparés par ":" . Pour afficher son contenu, 
+nous avons tapé la commande printenv PATH nous permettant d'afficher où trouver les commandes tapées par l'utilisateur. 
+Les commandes tapées par l'utilisateur se trouvent dans les dossiers : /usr/local/sbin, /usr/local/bin, /usr/sbin, /usr/bin
+, /sbin, /bin:/usr/games, /usr/local/games,/snap/bin.
+
+2. La variable d'environnement HOME contient le chemin vers le répertoire personnel. Ainsi, pour nous ramener au répertoire
+personnel, nous devons taper cd $HOME avec le symbole $ pour récupérer la valeur de cette variable d'environnement.
+
+3. 
+
+    La variable d'environnement LANG contient le paramètre linguistique de base utilisé par les applications du système pour communiquer avec l'utilisateur ex: fr_FR.UTF-8.
+    La variable d'environnement PWD contient le chemin du répertoire de travail courant de l'interpréteur de commande.
+    La variable d'environnement OLDPWD contient le chemin du dernier répertoire de travail courant avant d'avoir tapé la commande cd pour changer de répertoire courant.
+    La variable d'environnement SHELL contient le chemin vers l'interpréteur de commande préféré de l'utilisateur tel qu'il est défini dans le fichier /etc/passwd. Dans notre cas, sa valeur est /bin/bash car l'interpréteur de commande préféré est bash.
+    La variable d'environnement _ correspond au chemin à emprunter pour trouver le script de la commande appelée. Ainsi, lorsqu'on tape printenv _, on obtient /usr/bin/printenv.
+
+
+
+
