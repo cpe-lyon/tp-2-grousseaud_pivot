@@ -185,7 +185,7 @@ justePrix $guess
 function moyenne {
 	moyenne=0
 	moyenne=$(echo "( $moyenne + $1 + $2 + $3 ) / 3" | bc -l )
-	echo "la moyenne de ces trois chiffres est : $moyenne"
+	echo "la moyenne est : $moyenne"
 }
 
 function max {
@@ -196,7 +196,7 @@ function max {
 	if [[ $max -lt $3 ]]; then
 		max=$3
 	fi
-	echo "la maximum de ces chiffres est : $max"
+	echo "la maximum est : $max"
 }
 
 function min {
@@ -207,7 +207,7 @@ function min {
 	if [[ $3 -lt $min ]]; then
 		min=$3
 	fi
-	echo "le minimum de ces trois chiffres est : $min"
+	echo "le minimum est : $min"
 }
 
 nb1=$1
