@@ -10,12 +10,20 @@ Les commandes tapées par l'utilisateur se trouvent dans les dossiers : /usr/loc
 personnel, nous devons taper cd $HOME avec le symbole $ pour récupérer la valeur de cette variable d'environnement.
 
 3. 
-
-    La variable d'environnement LANG contient le paramètre linguistique de base utilisé par les applications du système pour communiquer avec l'utilisateur ex: fr_FR.UTF-8.
+    La variable d'environnement LANG contient le paramètre linguistique de base utilisé par les applications du système
+    pour communiquer avec l'utilisateur ex: fr_FR.UTF-8.
+    
     La variable d'environnement PWD contient le chemin du répertoire de travail courant de l'interpréteur de commande.
-    La variable d'environnement OLDPWD contient le chemin du dernier répertoire de travail courant avant d'avoir tapé la commande cd pour changer de répertoire courant.
-    La variable d'environnement SHELL contient le chemin vers l'interpréteur de commande préféré de l'utilisateur tel qu'il est défini dans le fichier /etc/passwd. Dans notre cas, sa valeur est /bin/bash car l'interpréteur de commande préféré est bash.
-    La variable d'environnement _ correspond au chemin à emprunter pour trouver le script de la commande appelée. Ainsi, lorsqu'on tape printenv _, on obtient /usr/bin/printenv.
+    
+    La variable d'environnement OLDPWD contient le chemin du dernier répertoire de travail courant avant d'avoir tapé 
+    la commande cd pour changer de répertoire courant.
+    
+    La variable d'environnement SHELL contient le chemin vers l'interpréteur de commande préféré de l'utilisateur tel
+    qu'il est défini dans le fichier /etc/passwd. Dans notre cas, sa valeur est /bin/bash car l'interpréteur de commande
+    préféré est bash.
+    
+    La variable d'environnement _ correspond au chemin à emprunter pour trouver le script de la commande appelée.
+    Ainsi, lorsqu'on tape printenv _, on obtient /usr/bin/printenv.
 
 
 
