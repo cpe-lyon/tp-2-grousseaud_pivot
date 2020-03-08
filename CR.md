@@ -1,4 +1,4 @@
-#Exercice 1 : Variables d'environnement
+# Exercice 1 : Variables d'environnement
 
 1. PATH est une variable d'environnement qui définit la liste des répertoire dans lequel chercher un programme à exécuter.
 Le contenu de cette variable d'environnement est une liste de répertoires séparés par ":" . Pour afficher son contenu, 
@@ -47,15 +47,15 @@ vers rien.
 
 
 
-#Exercice 2
+# Exercice 2
 
-##Consigne: 
+## Consigne: 
 Écrivez un scripttestpwd.sh qui demande de saisir un mot de passe et vérifie s’il correspond ou non au contenu 
 d’une variable PASSWORD dont le contenu est codé en dur dans le script. Le mot de passe saisi par l’utilisateur 
 ne doit pas s’aﬀicher.
 
 
-    testpwd.sh:
+testpwd.sh:
 #!/bin/bash 
 export pwd="password" 
 echo "Saisie mot de passe:" 
@@ -67,9 +67,9 @@ else
 fi
 
 
-#Excercice 3
+# Excercice 3
 
-##Consigne:
+## Consigne:
 Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre est un nombre
 réel. il affichera un message d'erreur dans le cas contraire.
 
@@ -93,9 +93,9 @@ else
 fi
 
 
-#Exercice 4
+# Exercice 4
 
-##Consigne :
+## Consigne :
 Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom est donné en paramètre du script. Si le script 
 est appelé sans nom d’utilisateur, il aﬀiche le message : ”Utilisation :nom_du_scriptnom_utilisateur”,où nom_du_script
 est le nom de votre script récupéré automatiquement (si vous changez le nom de votre script, le message doit changer 
@@ -120,9 +120,9 @@ if [ -z $1 ]; then
 fi 
 verifyUser $1
 
-#Exercice 5 
+# Exercice 5 
 
-##Consigne : 
+## Consigne : 
 Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre 
 (on supposera que l’utilisateur saisit toujours un entier naturel).
 
@@ -133,9 +133,9 @@ for (( i = 1; i <= $1; i++ )) do res=$(($res * $i))
 done echo $res
 
 
-#Exercice 6
+# Exercice 6
 
-##Consigne :
+## Consigne :
 Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner.
 Le programme écrira ”C’est plus!”, ”C’est moins!” ou ”Gagné!” selon les cas (vous utiliserez$RANDOM).
 
@@ -165,9 +165,9 @@ fi
 justePrix $guess
 
 
-#Exercice 7 
+# Exercice 7 
 
-##Consigne :
+## Consigne :
 1.Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et aﬀiche le min, le maxet la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres sont bien des entiers.
 
 2.Généralisez le programme à un nombre quelconque de paramètres (pensez àSHIFT).
@@ -176,7 +176,7 @@ justePrix $guess
 à mesure dans un tableau.
 
 
-##Question 1
+## Question 1
 
 #!/bin/bash
 
