@@ -165,4 +165,62 @@ fi
 justePrix $guess
 
 
+#Exercice 7 
+
+##Consigne :
+1.Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et aﬀiche le min, le maxet la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres sont bien des entiers.
+
+2.Généralisez le programme à un nombre quelconque de paramètres (pensez àSHIFT).
+
+3.Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et stockées au fur et
+à mesure dans un tableau.
+
+
+##Question 1
+
+#!/bin/bash
+
+
+
+function moyenne {
+	moyenne=0
+	moyenne=$(echo "( $moyenne + $1 + $2 + $3 ) / 3" | bc -l )
+	echo "la moyenne de ces trois chiffres est : $moyenne"
+}
+
+function max {
+	max=$1
+	if [[ $max -lt $2 ]]; then
+		max=$2
+	fi
+	if [[ $max -lt $3 ]]; then
+		max=$3
+	fi
+	echo "la maximum de ces chiffres est : $max"
+}
+
+function min {
+	min=$1
+	if [[ $2 -lt $min ]]; then
+		min=$2
+	fi
+	if [[ $3 -lt $min ]]; then
+		min=$3
+	fi
+	echo "le minimum de ces trois chiffres est : $min"
+}
+
+nb1=$1
+
+nb2=$2
+
+nb3=$3
+
+moyenne $nb1 $nb2 $nb3
+max $nb1 $nb2 $nb3
+min $nb1 $nb2 $nb3
+
+
+
+
 
